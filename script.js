@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // =======================
-  // Instagram feed (example)
+  // Instagram feed (optional example)
   // =======================
   const instagramToken = 'YOUR_INSTAGRAM_ACCESS_TOKEN_HERE';
   if (instagramToken && instagramToken !== 'YOUR_INSTAGRAM_ACCESS_TOKEN_HERE') {
@@ -85,21 +85,31 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // =======================
-  // Contact form
+  // Contact form with EmailJS
   // =======================
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Дякуємо! Ваше повідомлення надіслано.');
-      contactForm.reset();
+
+      emailjs.sendForm(
+        'service_jwln1xk',   // Заміни на твій Service ID
+        'template_l4dqdrq',  // Твій Template ID
+        this
+      ).then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Дякуємо! Ваше повідомлення надіслано.');
+        contactForm.reset();
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Виникла помилка відправки. Спробуйте ще раз.');
+      });
     });
   }
 
   // =======================
   // Light/Dark Mode Toggle
   // =======================
-  // Load saved theme
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -108,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
       : '<i class="fas fa-moon"></i>';
   }
 
-  // On click toggle theme
   themeToggle.addEventListener('click', () => {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
       document.documentElement.removeAttribute('data-theme');

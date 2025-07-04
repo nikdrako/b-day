@@ -173,21 +173,22 @@
         <p><i class="fas fa-envelope"></i> <a href="mailto:nikol.photo@example.com">nikol.photo@example.com</a></p>
         <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fkslp_ph" target="_blank" rel="noopener">@fkslp_ph</a></p>
       </div>
-      <form class="contact-form">
+      <form class="contact-form" action="#" method="POST">
         <div>
           <label for="name">Ім&rsquo;я</label>
-          <input type="text" id="name" required />
+          <input type="text" id="name" name="from_name" required />
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" name="reply_to" required />
         </div>
         <div>
           <label for="message">Повідомлення</label>
-          <textarea id="message" rows="4" required></textarea>
+          <textarea id="message" name="message" rows="4" required></textarea>
         </div>
         <button type="submit">Надіслати</button>
       </form>
+
     </div>
   </section>
 
@@ -197,5 +198,12 @@
 
   <!-- Main JavaScript -->
   <script src="script.js"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("WcMJWWq_oIuzAC3fw");
+    })();
+  </script>
 </body>
 </html>
