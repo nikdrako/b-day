@@ -169,7 +169,7 @@ header nav {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('../nikol_photo_3/images/background.jpg') center/cover no-repeat;
+              url('/images/background.jpg') center/cover no-repeat;
   color: #fff;
   display: flex;
   align-items: center;
