@@ -612,4 +612,16 @@ footer {
   font-style: italic;
   opacity: 0.8;
 }
+:root {
+  --vip-bg: #fff;  /* світла тема */
+}
 
+[data-theme="dark"] {
+  --vip-bg: linear-gradient(135deg, #1e1e1e, #2c2c2c);  /* темна тема */
+}
+
+.package.vip {
+  background: var(--vip-bg);
+  border: 2px solid var(--accent-color);
+  color: var(--text-color);
+}
