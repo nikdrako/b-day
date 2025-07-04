@@ -30,6 +30,7 @@
     <link rel="icon" href="/b-day/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/b-day/images_webp/favicon.webp" type="image/webp">
 </head>
+
 <body>
 <header>
     <div class="logo">
@@ -281,17 +282,40 @@
         </figure>
     </div>
 </section>
-
 <section id="instagram">
     <div class="container">
         <h2>Instagram</h2>
-        <p>Більше робіт у моєму Instagram: <a href="https://www.instagram.com/fkslp_ph" target="_blank" rel="noopener">@fkslp_ph</a>
+        <p>
+            Більше робіт у моєму Instagram:
+            <a href="https://www.instagram.com/fkslp_ph" target="_blank" rel="noopener">@fkslp_ph</a>
         </p>
-        <div id="instagram-feed" class="instagram-feed">
-            <!-- Instagram images will be loaded here by script -->
+
+        <div class="instagram-grid">
+            <!-- Перший пост -->
+            <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/DI_sglnoOe7/?img_index=1"
+                        data-instgrm-version="14"
+                        style="width:100%; max-width:300px; margin:0 auto;">
+            </blockquote>
+
+            <!-- Другий пост -->
+            <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/DHoaW9_Nwuv/?img_index=1"
+                        data-instgrm-version="14"
+                        style="width:100%; max-width:300px; margin:0 auto;">
+            </blockquote>
+
+            <!-- Третій пост -->
+            <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/DE1rb59NFvz/?img_index=1"
+                        data-instgrm-version="14"
+                        style="width:100%; max-width:300px; margin:0 auto;">
+            </blockquote>
         </div>
     </div>
 </section>
+
+
 
 <section id="contact">
     <div class="container contact-content">
@@ -334,5 +358,7 @@
         emailjs.init("WcMJWWq_oIuzAC3fw");
     })();
 </script>
+<!-- Instagram Embed Script (додається один раз перед </body>) -->
+<script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>

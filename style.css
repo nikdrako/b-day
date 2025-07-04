@@ -371,27 +371,24 @@ section {
   font-weight: 600;
   margin-top: 10px;
 }
-
 /* ============================
    INSTAGRAM GRID
 ============================ */
-.instagram-feed {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+.instagram-grid {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  justify-content: space-between; /* Вирівнювання елементів по горизонталі */
 }
 
-.instagram-feed a {
-  overflow: hidden;
-  border-radius: 8px;
-  position: relative;
+.instagram-media {
+  width: calc(33% - 10px); /* Кожен пост займає 1/3 ширини контейнера */
+  margin-bottom: 20px; /* Відступ між постами */
 }
 
-.instagram-feed img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+/* Відступ між фразою та постами Instagram */
+#instagram p {
+  margin-bottom: 30px; /* Збільшити відступ для простору між текстом і постами */
 }
 
 /* ============================
