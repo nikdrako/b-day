@@ -1,219 +1,338 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ніколь – Портретний фотограф</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Font for modern typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <title>Ніколь – Портретний фотограф</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google Font for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic"
+          rel="stylesheet">
 
-  <!-- FontAwesome for icons -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
-        media="print"
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  </noscript>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+          media="print"
+          onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    </noscript>
 
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Ніколь — професійний портретний та fashion фотограф у Львові. Замовте фотосесію зі справжніми емоціями!">
-  <meta name="keywords" content="фотограф Львів, портретна фотосесія, fashion фото, Love Story">
-  <meta property="og:title" content="Ніколь – Портретний фотограф Львів">
-  <meta property="og:description" content="Живі емоції у кожному кадрі. Замовте фотосесію у професійного фотографа Ніколь.">
-  <link rel="icon" href="/b-day/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/b-day/images_webp/favicon.webp" type="image/webp">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="description"
+          content="Ніколь — професійний портретний та fashion фотограф у Львові. Замовте фотосесію зі справжніми емоціями!">
+    <meta name="keywords" content="фотограф Львів, портретна фотосесія, fashion фото, Love Story">
+    <meta property="og:title" content="Ніколь – Портретний фотограф Львів">
+    <meta property="og:description"
+          content="Живі емоції у кожному кадрі. Замовте фотосесію у професійного фотографа Ніколь.">
+    <link rel="icon" href="/b-day/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/b-day/images_webp/favicon.webp" type="image/webp">
 </head>
 <body>
-  <header>
-  <div class="logo">
-    <img src="/b-day/images_webp/favicon.webp" height="45" width="45" alt="Logo" class="logo-icon">
-    Nikol Photography
-  </div>
+<header>
+    <div class="logo">
+        <img src="/b-day/images_webp/favicon.webp" height="45" width="45" alt="Logo" class="logo-icon">
+        Nikol Photography
+    </div>
     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     <nav>
-      <ul>
-        <li><a href="#portfolio">Галерея</a></li>
-        <li><a href="#services">Послуги</a></li>
-        <li><a href="#about">Про&nbsp;мене</a></li>
-        <li><a href="#reviews">Відгуки</a></li>
-        <li><a href="#contact">Контакти</a></li>
-      </ul>
+        <ul>
+            <li><a href="#portfolio">Галерея</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#about">Про&nbsp;мене</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
     </nav>
     <button id="theme-toggle" aria-label="Перемикання теми"><i class="fas fa-moon"></i></button>
-  </header>
+</header>
 
-  <section id="hero" class="hero">
+<section id="hero" class="hero">
     <div class="hero-content">
-      <h1>Ніколь</h1>
-      <p class="tagline"> Портретний та Fashion фотограф, Львів</p>
-      <a href="#contact" class="btn-cta">Замовити фотосесію</a>
+        <h1>Ніколь</h1>
+        <p class="tagline"> Портретний та Fashion фотограф, Львів</p>
+        <a href="#contact" class="btn-cta">Замовити фотосесію</a>
     </div>
-  </section>
+</section>
 
-  <section id="portfolio">
+<section id="portfolio">
     <div class="container">
-      <h2>Портфоліо</h2>
-      <div class="filters">
-        <button data-filter="all" class="active">Усі</button>
-        <button data-filter="portrait">Портрети</button>
-        <button data-filter="fashion">Fashion</button>
-        <button data-filter="lovestory">Love Story</button>
-        <button data-filter="imidzh">Імідж</button>
-      </div>
-      <!-- Галерея: приклади фото з Unsplash. Заміни на власні роботи за можливості. -->
-      <div class="gallery">
-        <div class="gallery-item portrait">
-          <img src="/b-day/images_webp/portrait.webp" height="1350" width="1080" alt="Portrait example"/>
+        <h2>Портфоліо</h2>
+        <div class="filters">
+            <button data-filter="all" class="active">Усі</button>
+            <button data-filter="portrait">Портрети</button>
+            <button data-filter="fashion">Fashion</button>
+            <button data-filter="lovestory">Love Story</button>
+            <button data-filter="imidzh">Імідж</button>
         </div>
-        <div class="gallery-item fashion">
-          <img src="/b-day/images_webp/fashion.webp" height="1350" width="1080" alt="Fashion example"/>
-        </div>
-        <div class="gallery-item lovestory">
-          <img src="/b-day/images_webp/couple_example.webp" height="1350" width="1080" alt="Love story example" />
-        </div>
-        <div class="gallery-item imidzh">
-          <img src="/b-day/images_webp/creative_portrait_example.webp" height="1350" width="1080" alt="Creative portrait example"/>
-        </div>
-        <div class="gallery-item portrait">
-          <img src="/b-day/images_webp/portrait_2.webp" height="1350" width="1080" alt="Portrait example"/>
-        </div>
-        <div class="gallery-item fashion">
-          <img src="/b-day/images_webp/fashion_2.webp" height="1350" width="1080" alt="Fashion example" />
-        </div>
-        <div class="gallery-item lovestory">
-          <img src="/b-day/images_webp/love_story_2.webp" height="1317" width="1054" alt="Love story example"/>
-        </div>
-        <div class="gallery-item imidzh">
-          <img src="/b-day/images_webp/studio_portrait.webp" height="1350" width="1080" alt="Studio portrait example"/>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Галерея: приклади фото з Unsplash. Заміни на власні роботи за можливості. -->
+        <div class="gallery">
+            <div class="gallery-item portrait">
+                <img
+                        src="/b-day/output/portrait_768w.webp"
+                        srcset="
+                  /b-day/output/portrait_480w.webp 480w,
+                  /b-day/output/portrait_768w.webp 768w,
+                  /b-day/output/portrait_1080w.webp 1080w"
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Portrait example"
+                        loading="lazy"
+                >
+            </div>
+            <div class="gallery-item fashion">
+                <img
+                        src="/b-day/output/fashion_768w.webp"
+                        srcset="
+      /b-day/output/fashion_480w.webp 480w,
+      /b-day/output/fashion_768w.webp 768w,
+      /b-day/output/fashion_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Fashion example"
+                        loading="lazy"
+                >
+            </div>
 
-  <section id="services">
+            <div class="gallery-item lovestory">
+                <img
+                        src="/b-day/output/couple_example_768w.webp"
+                        srcset="
+      /b-day/output/couple_example_480w.webp 480w,
+      /b-day/output/couple_example_768w.webp 768w,
+      /b-day/output/couple_example_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Love story example"
+                        loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item imidzh">
+                <img
+                        src="/b-day/output/creative_portrait_example_768w.webp"
+                        srcset="
+      /b-day/output/creative_portrait_example_480w.webp 480w,
+      /b-day/output/creative_portrait_example_768w.webp 768w,
+      /b-day/output/creative_portrait_example_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Creative portrait example"
+                        loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item portrait">
+                <img
+                        src="/b-day/output/portrait_2_768w.webp"
+                        srcset="
+      /b-day/output/portrait_2_480w.webp 480w,
+      /b-day/output/portrait_2_768w.webp 768w,
+      /b-day/output/portrait_2_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Portrait example"
+                        loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item fashion">
+                <img
+                        src="/b-day/output/fashion_2_768w.webp"
+                        srcset="
+      /b-day/output/fashion_2_480w.webp 480w,
+      /b-day/output/fashion_2_768w.webp 768w,
+      /b-day/output/fashion_2_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Fashion example"
+                        loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item lovestory">
+                <img
+                        src="/b-day/output/love_story_2_768w.webp"
+                        srcset="
+      /b-day/output/love_story_2_480w.webp 480w,
+      /b-day/output/love_story_2_768w.webp 768w,
+      /b-day/output/love_story_2_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Love story example"
+                        loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item imidzh">
+                <img
+                        src="/b-day/output/studio_portrait_768w.webp"
+                        srcset="
+      /b-day/output/studio_portrait_480w.webp 480w,
+      /b-day/output/studio_portrait_768w.webp 768w,
+      /b-day/output/studio_portrait_1080w.webp 1080w
+    "
+                        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                        alt="Studio portrait example"
+                        loading="lazy"
+                >
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="services">
     <div class="container">
-      <h2>Послуги та Ціни</h2>
-      <div class="packages">
-        <div class="package">
-          <h3>Базовий</h3>
-          <p class="price"> від 1000 грн</p>
-          <ul>
-            <li>1 година зйомки </li>
-            <li>10 фотографій з ретушшю</li>
-            <li>Консультація щодо образу</li>
-            <li>Всі сирі фото в базовій обробці</li>
-          </ul>
+        <h2>Послуги та Ціни</h2>
+        <div class="packages">
+            <div class="package">
+                <h3>Базовий</h3>
+                <p class="price"> від 1000 грн</p>
+                <ul>
+                    <li>1 година зйомки</li>
+                    <li>10 фотографій з ретушшю</li>
+                    <li>Консультація щодо образу</li>
+                    <li>Всі сирі фото в базовій обробці</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Преміум</h3>
+                <p class="price"> від 2000 грн</p>
+                <ul>
+                    <li>2 години зйомки</li>
+                    <li>25 відретушованих фото</li>
+                    <li>Робота візажиста та стиліста</li>
+                    <li>До 3 образів/луків</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>VIP</h3>
+                <p class="price">від 2500 грн</p>
+                <ul>
+                    <li>4 години зйомки</li>
+                    <li>50 фото з ретушшю</li>
+                    <li>Послуги візажиста та стиліста</li>
+                    <li>Фотокнига 20 сторінок</li>
+                </ul>
+            </div>
         </div>
-        <div class="package">
-          <h3>Преміум</h3>
-          <p class="price" > від 2000 грн</p>
-          <ul>
-            <li>2 години зйомки </li>
-            <li>25 відретушованих фото</li>
-            <li>Робота візажиста та стиліста</li>
-            <li>До 3 образів/луків</li>
-          </ul>
-        </div>
-        <div class="package">
-          <h3>VIP</h3>
-          <p class="price">від 2500 грн</p>
-          <ul>
-            <li>4 години зйомки</li>
-            <li>50 фото з ретушшю</li>
-            <li>Послуги візажиста та стиліста</li>
-            <li>Фотокнига 20 сторінок</li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section id="about">
+<section id="about">
     <div class="container about-content">
-      <div class="about-photo">
-        <!-- Фото фотографа: додай реальне фото Ніколь у файл images/nikol.jpg -->
-        <img src="/b-day/images_webp/nikol.webp" alt="Фотограф Ніколь">
-      </div>
-      <div class="about-text">
-        <h2>Про мене</h2>
-        <p>Привіт! Мене звати Ніколь, я професійний фотограф із Львова, спеціалізуюся на портретних та fashion фотосесіях. Обожнюю створювати атмосферу, в якій розкривається природна краса та характер кожної людини.</p>
-        <p>Більше 5 років я допомагаю клієнтам відчути себе впевнено перед камерою. Моя ціль – щоб зйомка проходила легко та комфортно, а результатом були живі емоції на стильних фотографіях.</p>
-        <p>Моє кредо: <strong>«живі емоції в кожному кадрі»</strong>. Буду рада втілити ваші ідеї та зберегти особливі моменти у фотографіях!</p>
-      </div>
-    </div>
-  </section>
+        <div class="about-photo">
+            <picture>
+                <source
+                        srcset="/b-day/output/nikol_480w.webp 480w,
+              /b-day/output/nikol_768w.webp 768w,
+              /b-day/output/nikol_1080w.webp 1080w"
+                        sizes="(max-width: 480px) 100vw,
+             (max-width: 768px) 50vw,
+             400px"
+                        type="image/webp">
+                <img
+                        src="/b-day/output/nikol_1080w.webp"
+                        alt="Фотограф Ніколь"
+                        loading="lazy"
+                        width="400"
+                        height="533"
+                        sizes="(max-width: 480px) 100vw,
+             (max-width: 768px) 50vw,
+             400px">
+            </picture>
+        </div>
 
-  <section id="reviews">
+        <div class="about-text">
+            <h2>Про мене</h2>
+            <p>Привіт! Мене звати Ніколь, я професійний фотограф із Львова, спеціалізуюся на портретних та fashion
+                фотосесіях. Обожнюю створювати атмосферу, в якій розкривається природна краса та характер кожної
+                людини.</p>
+            <p>Більше 5 років я допомагаю клієнтам відчути себе впевнено перед камерою. Моя ціль – щоб зйомка проходила
+                легко та комфортно, а результатом були живі емоції на стильних фотографіях.</p>
+            <p>Моє кредо: <strong>«живі емоції в кожному кадрі»</strong>. Буду рада втілити ваші ідеї та зберегти
+                особливі моменти у фотографіях!</p>
+        </div>
+    </div>
+</section>
+
+<section id="reviews">
     <div class="container">
-      <h2>Відгуки</h2>
-      <figure class="testimonial">
-        <blockquote>Дякую за чудові фото! Атмосфера зйомки була невимушена і приємна, результат перевершив очікування.</blockquote>
-        <figcaption>&mdash; Анна</figcaption>
-      </figure>
-      <figure class="testimonial">
-        <blockquote>Неймовірний фотограф! Ніколь має талановите бачення та професійний підхід. Фотосесія пройшла легко, а знімки просто вау.</blockquote>
-        <figcaption>&mdash; Ольга</figcaption>
-      </figure>
-      <figure class="testimonial">
-        <blockquote>Супер професіоналізм і творчий підхід. Мені було легко працювати з Ніколь, результат – неймовірні фото для мого портфоліо.</blockquote>
-        <figcaption>&mdash; Андрій</figcaption>
-      </figure>
+        <h2>Відгуки</h2>
+        <figure class="testimonial">
+            <blockquote>Дякую за чудові фото! Атмосфера зйомки була невимушена і приємна, результат перевершив
+                очікування.
+            </blockquote>
+            <figcaption>&mdash; Анна</figcaption>
+        </figure>
+        <figure class="testimonial">
+            <blockquote>Неймовірний фотограф! Ніколь має талановите бачення та професійний підхід. Фотосесія пройшла
+                легко, а знімки просто вау.
+            </blockquote>
+            <figcaption>&mdash; Ольга</figcaption>
+        </figure>
+        <figure class="testimonial">
+            <blockquote>Супер професіоналізм і творчий підхід. Мені було легко працювати з Ніколь, результат –
+                неймовірні фото для мого портфоліо.
+            </blockquote>
+            <figcaption>&mdash; Андрій</figcaption>
+        </figure>
     </div>
-  </section>
+</section>
 
-  <section id="instagram">
+<section id="instagram">
     <div class="container">
-      <h2>Instagram</h2>
-      <p>Більше робіт у моєму Instagram: <a href="https://www.instagram.com/fkslp_ph" target="_blank" rel="noopener">@fkslp_ph</a></p>
-      <div id="instagram-feed" class="instagram-feed">
-        <!-- Instagram images will be loaded here by script -->
-      </div>
+        <h2>Instagram</h2>
+        <p>Більше робіт у моєму Instagram: <a href="https://www.instagram.com/fkslp_ph" target="_blank" rel="noopener">@fkslp_ph</a>
+        </p>
+        <div id="instagram-feed" class="instagram-feed">
+            <!-- Instagram images will be loaded here by script -->
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="contact">
+<section id="contact">
     <div class="container contact-content">
-      <h2>Контакти</h2>
-      <div class="contact-info">
-        <p><i class="fas fa-phone"></i> <a href="tel:+380971234567">+380 (97) 123-45-67</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:nikol.photo@example.com">nikol.photo@example.com</a></p>
-        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fkslp_ph" target="_blank" rel="noopener">@fkslp_ph</a></p>
-      </div>
-      <form class="contact-form" action="#" method="POST">
-        <div>
-          <label for="name">Ім&rsquo;я</label>
-          <input type="text" id="name" name="from_name" required />
+        <h2>Контакти</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> <a href="tel:+380971234567">+380 (97) 123-45-67</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:nikol.photo@example.com">nikol.photo@example.com</a></p>
+            <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fkslp_ph" target="_blank"
+                                                   rel="noopener">@fkslp_ph</a></p>
         </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="reply_to" required />
-        </div>
-        <div>
-          <label for="message">Повідомлення</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Надіслати</button>
-      </form>
+        <form class="contact-form" action="#" method="POST">
+            <div>
+                <label for="name">Ім&rsquo;я</label>
+                <input type="text" id="name" name="from_name" required/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="reply_to" required/>
+            </div>
+            <div>
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Надіслати</button>
+        </form>
 
     </div>
-  </section>
+</section>
 
-  <footer>
+<footer>
     <p>&copy; 2025 Nikol Photography. Всі права захищені.</p>
-  </footer>
+</footer>
 
-  <!-- Main JavaScript -->
-  <script src="script.js"></script>
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("WcMJWWq_oIuzAC3fw");
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+<!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function () {
+        emailjs.init("WcMJWWq_oIuzAC3fw");
     })();
-  </script>
+</script>
 </body>
 </html>
