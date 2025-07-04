@@ -551,55 +551,65 @@ footer {
         flex-direction: column;
     }
 }
+
 .package.popular {
-  border: 2px solid var(--accent-color);
-  transform: scale(1.05);
+    border: 2px solid var(--accent-color);
+    transform: scale(1.05);
 }
 
 .package .badge {
-  display: inline-block;
-  background: var(--accent-color);
-  color: #fff;
-  padding: 5px 12px;
-  font-size: 0.7rem;
-  border-radius: 50px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .package .price {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--accent-color);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .package ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .package ul li i {
-  color: var(--accent-color);
-  margin-right: 8px;
+    color: var(--accent-color);
+    margin-right: 8px;
 }
 
 .btn-cta.small {
-  display: inline-block;
-  background: var(--accent-color);
-  color: #fff;
-  padding: 10px 25px;
-  border-radius: 50px;
-  margin-top: 20px;
-  transition: background 0.3s, transform 0.3s;
-  font-size: 0.9rem;
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 0.9rem;
 }
 
 .btn-cta.small:hover {
-  background: #d81b60;
-  transform: scale(1.05);
+    background: #d81b60;
+    transform: scale(1.05);
 }
 
 .package.vip {
-  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
-  border: 2px solid var(--accent-color);
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    border: 2px solid var(--accent-color);
 }
+#services .note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+}
+
