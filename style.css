@@ -625,3 +625,76 @@ footer {
   border: 2px solid var(--accent-color);
   color: var(--text-color);
 }
+/* ============================
+   THEME TOGGLE SWITCH
+============================ */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50пшеpx;
+  height: 26px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.theme-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.theme-switch input:checked + .slider {
+  background-color: var(--accent-color);
+}
+
+.theme-switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Optional: sun/moon icon inside knob */
+.theme-switch .slider:before {
+  background: #fff url('data:image/svg+xml;utf8,<svg fill="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a9.93 9.93 0 00-7.07 2.93A10 10 0 0012 22a10 10 0 000-20zm0 18a8 8 0 118-8 8 8 0 01-8 8z"/></svg>') no-repeat center;
+  background-size: 60%;
+}
+
+.theme-switch input:checked + .slider:before {
+  background: #fff url('data:image/svg+xml;utf8,<svg fill="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.76 4.84l-1.8-1.79-1.42 1.42 1.79 1.8 1.43-1.43zm10.48 0l1.79-1.8-1.42-1.42-1.8 1.79 1.43 1.43zM12 4V1h-1v3h1zm0 19v-3h-1v3h1zm9-10h-3v1h3v-1zm-19 0H1v1h3v-1zm2.34 7.66l-1.8 1.79 1.42 1.42 1.79-1.8-1.41-1.41zm13.32 0l1.79 1.8 1.42-1.42-1.8-1.79-1.41 1.41zM17.66 6.34l1.8-1.79-1.42-1.42-1.79 1.8 1.41 1.41z"/></svg>') no-repeat center;
+  background-size: 60%;
+}
+.package ul {
+  padding-left: 20px;  /* Відступ для bullet-списку */
+}
+.instagram-grid {
+  display: flex;
+  flex-wrap: nowrap; /* не переносити блоки вниз */
+  gap: 10px;
+  overflow-x: auto;  /* дозволяє скролл по горизонталі */
+  padding-bottom: 20px; /* трохи простору для скролу */
+}
+
+.instagram-media {
+  flex: 0 0 auto;    /* щоб блоки не стискались */
+  width: 250px;      /* фіксована ширина для поста */
+}
