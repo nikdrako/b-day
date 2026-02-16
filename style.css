@@ -379,8 +379,8 @@ header.menu-open .hamburger-line:nth-child(3) {
 .hero {
     min-height: 100vh;
     min-height: 100dvh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/b-day/output/background_1080w.webp') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url('/b-day/output/mountains_1080w.webp') center/cover no-repeat;
     color: #fff;
     display: flex;
     align-items: center;
@@ -391,15 +391,15 @@ header.menu-open .hamburger-line:nth-child(3) {
 
 @media (max-width: 768px) {
     .hero {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('/b-day/output/background_768w.webp') center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+            url('/b-day/output/mountains_768w.webp') center/cover no-repeat;
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('/b-day/output/background_480w.webp') center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+            url('/b-day/output/mountains_480w.webp') center/cover no-repeat;
     }
 }
 
@@ -752,6 +752,8 @@ section {
     font-weight: 600;
     color: var(--accent-color);
     font-style: normal;
+    background: transparent;
+    padding: 0;
 }
 
 /* ============================
@@ -1009,7 +1011,7 @@ section {
 /* ============================
    FOOTER
 ============================ */
-footer {
+footer[role="contentinfo"] {
     background: #1a1a1a;
     color: #aaa;
     text-align: center;
